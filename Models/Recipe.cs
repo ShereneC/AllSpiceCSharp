@@ -14,11 +14,11 @@ namespace AllSpiceCSharp.Models
     public string Title { get; set; }
     
     [Range (1, 2880)]
-    public int CookTime { get; set; }
+    public int CookTime { get; set; } = 1;
     [Range (1, 2880)]
-    public int PrepTime { get; set; }
+    public int PrepTime { get; set; } = 1;
     public string CreatorId { get; set; }
     // TODO populate Creator
-    public Account Creator { get; set; }
+    public Profile Creator { get; set; }
     }
 }
